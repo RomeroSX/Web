@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color_primario: #121116;
+    --color_secundario: #ffffff;
+    --tamanio__fuente: 18px;
+    --maximo__ancho: 1200px;
+    --alto__nav: 70px;
+}
+::selection {
+    background-color: var(--color_primario);
+    color: var(--color_secundario)
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: var(--tamanio_fuente);
+    background-color: var(--color_primario);
+    color: #ffffff;
+}
+header{
+    background-color: var(--color_primario);
+    position: fixed;
+    width: 100%;
+    top: 0; 
+}
+section{
+    
+}
+.contenedor{
+    width: 100%;
+    max-width: var(--maximo__ancho);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav{
+    /*height: 70px;*/
+
+}
+.nav__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__lista{
+    list-style: none;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    gap: 2rem;
+
+}
+.nav__link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h-100{
+    height: calc(100vh - var(--alto__nav));
+}
+.imagen1{
+    width: 600px;
+    height: 600px;
+    order: 1;
+    flex-basis: 20%;
+}
+.contenedor-texto{
+    order: 0;
+    flex-basis: 40%;
+
+}
+.titulo{
+    font-size: 50px;
+    font-weight: 600;
+}
+.parrafo{
+    margin: 20px 0;
+    font-weight: 300;
+}
+.BTN{
+    display: inline-block;
+    background-color: #ffffff;
+    color: var(--color_primario);
+    text-decoration: none;
+    font-weight: 900;
+    padding: 16px 30px;
+    border-radius: 30px;
+}
+.imagen2{
+    width: 600px;
+    height: 500px;
+    flex-basis: 20%;
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.card__item{
+    max-width: 350px;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0,0,0 0.5);
+    text-align: center;
+    background-color: var(--color_primario);
+    color: var(--color_secundario);
+    padding: 40px 0;
+    border-radius: 10px;
+
+
+}
+
+.card__precio{
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+.card__caracter{
+    margin-bottom: 25px;
+}
